@@ -1,0 +1,11 @@
+Model Information:
+* title:	Earth's Interior
+* source:	https://sketchfab.com/3d-models/earths-interior-4fa1ee1a6fa246d8acf56bc400f1bf5f
+* author:	person99 (https://sketchfab.com/person99)
+
+Model License:
+* license type:	CC-BY-NC-ND-4.0 (http://creativecommons.org/licenses/by-nc-nd/4.0/)
+* requirements:	Author must be credited. No commercial use. Modified versions can not be distributed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Earth's Interior" (https://sketchfab.com/3d-models/earths-interior-4fa1ee1a6fa246d8acf56bc400f1bf5f) by person99 (https://sketchfab.com/person99) licensed under CC-BY-NC-ND-4.0 (http://creativecommons.org/licenses/by-nc-nd/4.0/)
