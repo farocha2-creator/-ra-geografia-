@@ -32,15 +32,14 @@
     <!-- Marcador Hiro: camadas da Terra -->
     <a-marker preset="hiro">
 
-      <!-- Modelo pronto: camadas internas da Terra (crosta, manto, núcleo) -->
-      <!-- Autor: Pointy Orb (Sketchfab) - Licença CC Attribution-NonCommercial-NoDerivs -->
-      <a-entity gltf-model="earths_interior/scene.gltf"
-        scale="0.3 0.3 0.3"
+      <!-- Corte das camadas da Terra (núcleo interno, núcleo externo, manto, crosta), gerado com proporções reais -->
+      <a-entity gltf-model="earth_cutaway.glb"
+        scale="1.2 1.2 1.2"
         position="0 0.3 0"
-        rotation="0 0 0">
+        rotation="0 -45 0">
       </a-entity>
 
-      <a-text value="Camadas da Terra (cr&#233;dito: Pointy Orb / Sketchfab)" position="0 0.9 0" align="center" color="#000" width="1.4"></a-text>
+      <a-text value="Camadas da Terra" position="0 0.9 0" align="center" color="#000" width="1.4"></a-text>
 
     </a-marker>
 
