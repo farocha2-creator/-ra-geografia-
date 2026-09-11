@@ -32,18 +32,16 @@
     <!-- Marcador de teste (Hiro). Em produção, cada face do cubo usaria um marcador/padrão diferente -->
     <a-marker preset="hiro">
 
-      <!-- "Globo" simples representando a Terra -->
-      <a-sphere position="0 0.6 0" radius="0.4" color="#2E86AB"
-        animation="property: rotation; to: 0 360 0; loop: true; dur: 8000; easing: linear">
-      </a-sphere>
-
-      <!-- Bloco representando um "relevo" (poderia ser substituído por um DEM exportado do QGIS) -->
-      <a-box position="0 0.05 0" width="1" height="0.1" depth="1" color="#6B8E23"></a-box>
-      <a-cone position="-0.25 0.25 0.2" radius-bottom="0.15" radius-top="0" height="0.35" color="#8B5E3C"></a-cone>
-      <a-cone position="0.2 0.2 -0.15" radius-bottom="0.12" radius-top="0" height="0.25" color="#8B5E3C"></a-cone>
+      <!-- Relevo real do Cânion Itaimbezinho, gerado a partir do DEM no QGIS -->
+      <a-entity gltf-model="itaimbezinho.glb"
+        scale="0.6 0.6 0.6"
+        position="0 0 0"
+        rotation="0 0 0"
+        animation="property: rotation; to: 0 360 0; loop: true; dur: 20000; easing: linear">
+      </a-entity>
 
       <!-- Rótulo -->
-      <a-text value="Geografia em RA" position="0 1.1 0" align="center" color="#000" width="2"></a-text>
+      <a-text value="Cânion Itaimbezinho" position="0 0.9 0" align="center" color="#000" width="2.2"></a-text>
 
     </a-marker>
 
