@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <title>RA Geografia - Exemplo</title>
+  <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
+  <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
+  <style>
+    .instrucoes {
+      position: fixed; top: 10px; left: 0; width: 100%;
+      text-align: center; z-index: 999; font-family: sans-serif;
+      color: #fff; text-shadow: 0 0 4px #000; pointer-events: none;
+    }
+  </style>
+</head>
+<body style="margin:0; overflow:hidden;">
+
+  <div class="instrucoes" id="instrucoes">
+    Aponte a câmera para o marcador <b>Hiro</b> abaixo (clique com o botão direito &gt; salvar imagem, ou tire print, para imprimir):
+    <br>
+    <img src="hiro.png" alt="Marcador Hiro" style="max-width:200px; margin-top:6px; border:2px solid #fff;">
+    <br>
+    <button onclick="document.getElementById('instrucoes').style.display='none'"
+      style="margin-top:8px; padding:6px 14px; border-radius:6px; border:none; background:#fff; color:#000; font-weight:bold; pointer-events:auto;">
+      Já salvei o marcador — esconder
+    </button>
+  </div>
+
+  <a-scene embedded arjs="sourceType: webcam; debugUIEnabled: false;">
+
+    <!-- Marcador de teste (Hiro). Em produção, cada face do cubo usaria um marcador/padrão diferente -->
+    <a-marker preset="hiro">
+
+      <!-- Relevo real do Cânion Itaimbezinho, exportado do Qgis2threejs (com textura/cores do QGIS) -->
+      <a-entity gltf-model="Itaimbezinho2.gltf"
+        scale="0.6 0.6 0.6"
+        position="0 0 0"
+        rotation="0 0 0">
+      </a-entity>
+
+      <!-- Rótulo -->
+      <a-text value="Cânion Itaimbezinho" position="0 0.9 0" align="center" color="#000" width="2.2"></a-text>
+
+    </a-marker>
+
+    <a-entity camera></a-entity>
+  </a-scene>
+
+</body>
+</html>
